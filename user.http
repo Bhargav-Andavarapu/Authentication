@@ -1,0 +1,33 @@
+###
+////API-1 Register a New User
+POST http://localhost:3000/register
+Content-Type: application/json
+
+{
+    "username": "Bhargav Andavarapu",
+    "name": "Bhargav",
+    "password": "Bhargav",
+    "gender": "Male",
+    "location": "Srikakulam"
+}
+
+###
+//API-2 Login
+POST http://localhost:3000/login
+Content-Type: application/json
+
+{
+    "username": "Bhargav Andavarapu",
+    "password": "Bhargav"
+}
+
+###
+//API-3 ChangePassword
+PUT http://localhost:3000/change-password
+Content-Type: application/json
+
+{
+    "username": "Bhargav Andavarapu",
+    "oldPassword": "Bhargav",
+    "newPassword": "Abhargav"
+}
